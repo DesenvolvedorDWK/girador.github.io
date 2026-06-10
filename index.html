@@ -25,30 +25,29 @@
         }
 
         .galeria{
-            display:grid;
-            grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
-            gap:20px;
-            max-width:1400px;
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            gap:30px;
+            max-width:1200px;
             margin:0 auto;
         }
 
-        div{
-            align:center;
-            
-        }
-
         .imagem{
+            width:90%;
+            max-width:1000px;
             background:white;
             border-radius:12px;
             padding:10px;
             box-shadow:0 4px 12px rgba(0,0,0,0.2);
             text-align:center;
-        }
+        }    
 
         .imagem img{
             width:100%;
             height:auto;
-            border-radius:29px;
+            border-radius:8px;
+            display:block;
         }
 
         .imagem p{
@@ -58,37 +57,31 @@
     </style>
 </head>
 <body>
+
     <header>
-         <h1>Girador Ferroviário - 000 331</h1>
+        <h1>Girador Ferroviário - 000 331</h1>
     </header>
-   
 
     <div class="galeria">
 
         <div class="imagem">
             <img src="000 331.PNG" alt="Imagem 1">
-            <p>000 331</p>
         </div>
-   <br>
-        
+
         <div class="imagem">
             <img src="000 331 - 100.jpeg" alt="Imagem 2">
-            <p>000 331 - 100</p>
         </div>
-    <br>
+
         <div class="imagem">
             <img src="000 331 - 800 - 1.jpeg" alt="Imagem 3">
-            <p>000 331 - 800</p>
         </div>
-     <br>
+
         <div class="imagem">
             <img src="000 331 - 800 - 2.jpeg" alt="Imagem 4">
-            <p>000 331 - 800</p>
         </div>
- <br>
+
         <div class="imagem">
             <img src="000 331 - 810.jpeg" alt="Imagem 5">
-            <p>000 331 - 810</p>
         </div>
 
     </div>
