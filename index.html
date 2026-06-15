@@ -18,18 +18,40 @@ body{
     background:#f2f2f2;
     font-family:Arial, Helvetica, sans-serif;
 }
-
-header{
+    header{
     background:#00509E;
     color:white;
-    text-align:center;
     padding:20px;
-    position:sticky;
-    top:0;
-    z-index:100;
+    text-align:center;
+    }
+
+.cabecalho{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
 }
 
-    .botao-download{
+.logo{
+    width:80px;
+    height:auto;
+    background:white;
+    padding:5px;
+    border-radius:8px;
+}
+
+.cabecalho h1{
+    margin:0;
+    font-size:1.4rem;
+}
+
+.cabecalho p{
+    margin-top:5px;
+    font-size:0.9rem;
+}
+
+.botao-download{
     display:inline-block;
     margin-top:15px;
     padding:12px 24px;
@@ -38,14 +60,6 @@ header{
     text-decoration:none;
     font-weight:bold;
     border-radius:8px;
-    transition:0.3s;
-}
-
-.botao-download:hover{
-    background:#e6e6e6;
-}
-header h1{
-    font-size:1.4rem;
 }
 
 .galeria{
@@ -97,7 +111,14 @@ footer{
 <body>
 
 <header>
+
+    <div class="cabecalho">
+        <img src="Logo-Hubner.jpg" alt="Logo Hübner" class="logo">
+        <div>
     <h1>Girador Ferroviário - 000 331</h1>
+            </div>
+    </div>
+    
      <a class="botao-download"
        href="https://github.com/DesenvolvedorDWK/teste.github.io/tree/main/000%20331%20-%20000"
        target="_blank">
